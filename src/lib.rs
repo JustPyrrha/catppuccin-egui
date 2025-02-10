@@ -34,7 +34,9 @@
     feature = "egui26",
     feature = "egui27",
     feature = "egui28",
-    feature = "egui29"
+    feature = "egui29",
+    feature = "egui30",
+    feature = "egui31"
 )))]
 compile_error!("at least one egui version must be enabled");
 
@@ -46,6 +48,10 @@ use egui27 as egui;
 use egui28 as egui;
 #[cfg(feature = "egui29")]
 use egui29 as egui;
+#[cfg(feature = "egui30")]
+use egui30 as egui;
+#[cfg(feature = "egui31")]
+use egui31 as egui;
 
 use egui::{epaint, style};
 
